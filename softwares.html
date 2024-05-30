@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sign-in/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+   <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.6/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.6/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.6/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.6/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+	.txt-cen {
+            text-align: center;
+         }
+
+	.modal-body label {
+            margin-top: 10px;
+         }
+
+	.welcome-box {
+            width: 900px;
+         }
+
+
+	</style>
+
+
+    <title>CG APIs</title>
+  </head>
+  <body>
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">CG APIs</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><button type="button" class="btn btn-outline-success">Home <span class="sr-only">(current)</span></button></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="apis.html"><button type="button" class="btn btn-outline-success">APIs <span class="sr-only">(current)</span></button></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="projects.html"><button type="button" class="btn btn-outline-success">Projects <span class="sr-only">(current)</span></button></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="softwares.html"><button type="button" class="btn btn-outline-success">Softwares <span class="sr-only">(current)</span></button></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="contact-us.html"><button type="button" class="btn btn-outline-success">Contact US <span class="sr-only">(current)</span></button></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button type="button" class="btn btn-danger ml-1" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Signup</button>
+    </form>
+  </div>
+</nav>
+  
+<!-- <div class="container-fluid our-services mt-5"> -->
+<!-- <main role="main"> -->
+
+      <!-- <!-- Main jumbotron for a primary marketing message or call to action -->
+      <!-- <div class="jumbotron"> -->
+        <!-- <div class="container"> -->
+          <!-- <h1 class="display-5">Welcome To CG APIs</h1> -->
+          <!-- <p>In My Website You Access Latest Softwares, Youtube API, Data Transfer API, Data Counter API, Telegram Downloading Bot API, Sim Information API <br> Authentication: Kali Linux <br> Auther: Ashfaque <br> Security Gaurd: Rashid <br> <b>Autherization OF : Google, Microsoft, Github & CG </b></p> -->
+          <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+        <!-- </div> -->
+      <!-- </div> -->
+<!-- </main> -->
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Signup</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body txt-cen">
+        <form class="form-signin">
+  <img class="mb-4" src="https://img.freepik.com/free-vector/flat-design-api-illustration_23-2149392285.jpg?size=626&ext=jpg" alt="" width="150" height="150">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="inputEmail" class="form-control my-3" placeholder="Email address" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+</form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+</div>
+</div>
+
+</div>
+
+
+		<center><h1 class="mt-5">Softwares & Windows ISO Free Download</h1> <br><br></center>
+
+
+<div class="album py-5 top-onl-app">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/1.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Bundle OF Win VISTA Custome Editions</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/2.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>CRUX X64</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/3.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Elementary OS</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="album py-5 top-proj">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/4.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Gold Windows XP SP3 2016 Drivers</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/5.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Kali Linux 2023 For VertualBox</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/6.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Kali Linux Purple Installer 2023</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="album py-5 top-onl-app">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/7.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Phoenix OS</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/8.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Remix OS Player (Android Game Player For PC)</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/9.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Ubuntu 2023</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="album py-5 top-onl-app">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/10.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>W7 Super Lite x64 Install 2019</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/11.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>W10 X64 PRO 2019</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/12.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>WINDOW 7 DUA JAN 2020</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="album py-5 top-proj">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/13.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>WINDOW 7 X64 2019</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/14.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 7 Aero Blue 2016 Lite Edition 2016 x64</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/15.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 7 DIC DirectX09 64-32 BIT</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="album py-5 top-onl-app">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/16.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 7 DIC DirectX11 64-32 BIT</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/17.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 7 Gold Edition 2016</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/18.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 7 Lite Edition 2016 x86</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="album py-5 top-onl-app">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/19.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 7 Lunar Edition X32</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/20.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 7 Service Pack 01</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/21.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 7 Starter X32</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="album py-5 top-proj">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/22.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 7 Super Nano Lite X64</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/23.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 8.1 AIO November 2019 x64 (Pre-Activated-PRO)</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/24.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 8.1 Heavier Edition 2</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="album py-5 top-onl-app">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/25.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 10 20H2 Lastest Version (Best For ME)</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/26.png" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 10 X86 X64 CG</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/27.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows Vista AIO SP2 IE9</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="album py-5 top-onl-app">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/28.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows Vista Ultimate X64 With SP2</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/29.png" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows Whistler 5.1 Professional</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/30.jpeg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows XP Full Mazza Edition</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="album py-5 top-proj">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/31.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows XP Professional 64-bit Corporate Edition</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/32.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows XP Vienna Edition</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/33.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows XP CG KEY</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="album py-5 top-onl-app">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/34.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 7 Lite Edition 2016 x64</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/35.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 8.1 Pro with Media Center x64</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/36.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 10 2015 Release</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="album py-5 top-onl-app">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/37.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 11 22H2 Best</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/38.jpg" alt="Card image cap" height="210">
+                <div class="card-body">
+					<h5><b>Windows 98 Second Edition</b></h5>
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href"#"><button type="button" class="btn btn-warning">Download Now</button></a>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
